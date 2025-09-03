@@ -1,18 +1,73 @@
-#Proyecto HERMES (sniffer/honeypot en netbook con AntiX)
+# 🛰️ Proyecto HERMES  
+**Hardware-based Environment for Research, Monitoring, and Ethical Security**
 
-**Objetivo:** Ahondar conocimientos contruyendo un sniffer y un honeypot, con reportes reproducibles y documentacion publica.
+HERMES es mi proyecto personal para convertir una **netbook Samsung NP-NC110** en una **estación de ciberseguridad ligera**.  
+Incluye herramientas de **network sniffing**, **honeypot**, **monitoring** y otras funciones para practicar y aprender de forma ética sobre seguridad informática.
 
-##Componentes
+---
 
--Sniffer (tshark/dumpcap)
--Honeypot (Cowrie)
--Scripts de analisis y reportes
--Documentacion didactica
+## 🎯 Objetivos del proyecto
+- Montar un **laboratorio de ciberseguridad** funcional en hardware de bajos recursos.
+- Integrar herramientas de **red, defensa y detección** para entornos de práctica.
+- Documentar cada paso del proceso, incluyendo errores, soluciones y aprendizajes.
+- Compartir guías reutilizables para otros que quieran replicar el proyecto.
 
-##Etica
+---
 
-Este proyecto captura unicamente mi propia redo con permiso explicito. Los datos publicados estan **anonimizado**.
+## 🛠️ Herramientas y tecnologías
+- **Sistema operativo**: Linux ligero (Xubuntu / Debian minimal / Arch + i3wm).
+- **Sniffing**: `tcpdump`, `Wireshark`, `tshark`.
+- **Honeypot**: `Cowrie`, `Dionaea` o `Honeyd`.
+- **Monitoring**: `Grafana` + `Prometheus` / `ELK Stack` (según recursos).
+- **Automatización**: Scripts Bash / Python para parsing y alertas.
+- **Seguridad**: `iptables`, `fail2ban`, hardening básico de Linux.
 
-##Como replicar?
+---
 
-Ver 'doc/lab-setup.md'
+## 🗂️ Fases del proyecto
+1. **Preparación del hardware**
+   - Limpieza y optimización de la netbook.
+   - Instalación de SO ligero.
+2. **Configuración de red**
+   - IP fija, segmentación de laboratorio, reglas de firewall.
+3. **Implementación de sniffing**
+   - Captura de tráfico con filtros y guardado en PCAP.
+4. **Honeypot**
+   - Configuración y logging de actividad.
+5. **Monitoring & Dashboard**
+   - Visualización de logs en tiempo real.
+6. **Automatización**
+   - Scripts para generar reportes y alertas.
+7. **Documentación y conclusiones**
+   - Lo que funcionó, problemas encontrados, mejoras futuras.
+
+---
+
+## 📦 Estructura del repositorio
+│
+├── docs/
+│ ├── etica.md
+│ ├── honeypot.md
+│ ├── lab-setup.md
+│ ├── sniffer.md
+│ └── traceroute.md
+├── data
+│ └── reports/
+│     ├── top_emisores_anonim.csv
+├── scripts/
+│ ├── anonimizar_csv.sh
+│ ├── top_emisores-bytes.sh
+│ └── top_emisores.sh
+│
+├── README.md
+└── LICENSE
+
+---
+
+## ⚠️ Disclaimer
+Este laboratorio se utiliza únicamente en **entornos controlados** y con **permiso explícito**.  
+No debe emplearse en redes o sistemas ajenos.
+
+---
+
+> *"Al final son solo ceros y unos."*
