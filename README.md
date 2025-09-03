@@ -15,7 +15,7 @@ Incluye herramientas de **network sniffing**, **honeypot**, **monitoring** y otr
 ---
 
 ## Herramientas y tecnologías
-- **Sistema operativo**: Linux ligero (Xubuntu / Debian minimal / Arch + i3wm).
+- **Sistema operativo**: Linux ligero (AntiX).
 - **Sniffing**: `tcpdump`, `Wireshark`, `tshark`.
 - **Honeypot**: `Cowrie`, `Dionaea` o `Honeyd`.
 - **Monitoring**: `Grafana` + `Prometheus` / `ELK Stack` (según recursos).
