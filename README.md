@@ -1,4 +1,4 @@
-# 🛰️ Proyecto HERMES  
+# Proyecto-HERMES  
 **Hardware-based Environment for Research, Monitoring, and Ethical Security**
 
 HERMES es mi proyecto personal para convertir una **netbook Samsung NP-NC110** en una **estación de ciberseguridad ligera**.  
@@ -6,7 +6,7 @@ Incluye herramientas de **network sniffing**, **honeypot**, **monitoring** y otr
 
 ---
 
-## 🎯 Objetivos del proyecto
+## Objetivos del proyecto
 - Montar un **laboratorio de ciberseguridad** funcional en hardware de bajos recursos.
 - Integrar herramientas de **red, defensa y detección** para entornos de práctica.
 - Documentar cada paso del proceso, incluyendo errores, soluciones y aprendizajes.
@@ -14,7 +14,7 @@ Incluye herramientas de **network sniffing**, **honeypot**, **monitoring** y otr
 
 ---
 
-## 🛠️ Herramientas y tecnologías
+## Herramientas y tecnologías
 - **Sistema operativo**: Linux ligero (Xubuntu / Debian minimal / Arch + i3wm).
 - **Sniffing**: `tcpdump`, `Wireshark`, `tshark`.
 - **Honeypot**: `Cowrie`, `Dionaea` o `Honeyd`.
@@ -24,7 +24,7 @@ Incluye herramientas de **network sniffing**, **honeypot**, **monitoring** y otr
 
 ---
 
-## 🗂️ Fases del proyecto
+## Fases del proyecto
 1. **Preparación del hardware**
    - Limpieza y optimización de la netbook.
    - Instalación de SO ligero.
@@ -43,28 +43,7 @@ Incluye herramientas de **network sniffing**, **honeypot**, **monitoring** y otr
 
 ---
 
-## 📦 Estructura del repositorio
-│
-├── docs/
-│ ├── etica.md
-│ ├── honeypot.md
-│ ├── lab-setup.md
-│ ├── sniffer.md
-│ └── traceroute.md
-├── data
-│ └── reports/
-│     ├── top_emisores_anonim.csv
-├── scripts/
-│ ├── anonimizar_csv.sh
-│ ├── top_emisores-bytes.sh
-│ └── top_emisores.sh
-│
-├── README.md
-└── LICENSE
-
----
-
-## ⚠️ Disclaimer
+## Disclaimer
 Este laboratorio se utiliza únicamente en **entornos controlados** y con **permiso explícito**.  
 No debe emplearse en redes o sistemas ajenos.
 
