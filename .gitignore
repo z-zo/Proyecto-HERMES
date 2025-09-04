@@ -1,8 +1,3 @@
-data/captures/*
-data/reports/*-raw.*
-*.pcap
-*.pcapng
-*.log
 var/
 # Entornos
 cowrie-env/
