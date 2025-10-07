@@ -1,19 +1,23 @@
-# Installation — Setup Guide
+# Installation — Setup Guide (copy/paste)
 
 ## Prerequisites
-- Netbook with at least **1 GB RAM** and **10 GB disk space**.
-- USB bootable drive with **AntiX**.
-- Stable internet connection for package installation.
+- Netbook with AntiX installed (or your chosen minimal distro)
+- Internet access to pull images/packages
+- 10 GB free disk recommended
 
-## Steps
-
-### 1. Install AntiX OS.
-Boot from your USB installer and choose:
-- Minimal installation (no desktop environment)
-- Standard system utilities + SSH server
-- Create a user with `sudo` privileges
-
-### 2. Clone the repository
+## Quick install (Debian/AntiX derived)
 ```bash
-sudo apt install -y git
-git clone https://github.com/z-zo/Proyecto-HERMES.git
+# update & essentials
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y git curl wget ca-certificates build-essential
+
+# Docker (recommended)
+sudo apt install -y docker.io
+sudo systemctl enable --now docker
+
+# Other tools
+sudo apt install -y tcpdump tshark python3 python3-pip tmux dnsmasq
+```
+## Clone repo
+git clone https://github.com/<your-user>/netbook-redteam-lab.git
+cd netbook-redteam-lab
