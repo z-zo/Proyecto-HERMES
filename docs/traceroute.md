@@ -1,3 +1,0 @@
--ICMP vs UDP vs TCP
--Interpretacion de hops, * * *
--Ejemplo con 8.8.8.8
