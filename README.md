@@ -1,55 +1,51 @@
-# Proyecto-HERMES                                                                                
+# Proyecto HERMES: Red Team Netbook Lab                                                                              
                                                                                                                            
 
 **Hardware-based Environment for Research, Monitoring, and Ethical Security**
 
-HERMES es mi proyecto personal para convertir una **netbook Samsung NP-NC110** en una **estación de ciberseguridad ligera**.  
-Incluye herramientas de **network sniffing**, **honeypot**, **monitoring** y otras funciones para practicar y aprender de forma ética sobre seguridad informática.
+Turn your old Samsung netbook (**netbook Samsung NP-NC110**) into a portable Red Team / offensive security workstation. The repository is designed as a reproducible, documented project you can show on GitHub and LinkedIn: automated deployment, lightweight services, and clear demo material.
+
 
 ---
 
-## Objetivos del proyecto
-- Montar un **laboratorio de ciberseguridad** funcional en hardware de bajos recursos.
-- Integrar herramientas de **red, defensa y detección** para entornos de práctica.
-- Documentar cada paso del proceso, incluyendo errores, soluciones y aprendizajes.
-- Compartir guías reutilizables para otros que quieran replicar el proyecto.
+## Goals
+
+- Convert the netbook into a lightweight, portable test station (sniffer, lightweight honeypots, vulnerable targets, deploy scripts).
+
+- Automate reproducible deployments with scripts and Ansible where appropriate.
+
+- Produce clear documentation (architecture, installation, deployment, use cases, tests).
+
+- Include ethics and scope guidelines to avoid abuse.
 
 ---
 
 ## Herramientas y tecnologías
-![Linux](https://img.shields.io/badge/Linux-OS-lightgrey?style=for-the-badge&logo=linux)
-![Python](https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python)
-![Bash](https://img.shields.io/badge/Bash-Scripting-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![Tcpdump](https://img.shields.io/badge/Tcpdump-Network%20Sniffer-orange?style=for-the-badge)
-![Wireshark](https://img.shields.io/badge/Wireshark-Protocol%20Analyzer-1679A7?style=for-the-badge&logo=wireshark)
-![Tshark](https://img.shields.io/badge/Tshark-CLI%20Analyzer-00629B?style=for-the-badge)
-![Cowrie](https://img.shields.io/badge/Cowrie-SSH%20Honeypot-blueviolet?style=for-the-badge)
-![Dionaea](https://img.shields.io/badge/Dionaea-Malware%20Honeypot-red?style=for-the-badge)
-![Honeyd](https://img.shields.io/badge/Honeyd-Virtual%20Honeypot-darkred?style=for-the-badge)
-![Grafana](https://img.shields.io/badge/Grafana-Dashboard-orange?style=for-the-badge&logo=grafana)
-![Prometheus](https://img.shields.io/badge/Prometheus-Metrics%20Monitor-E6522C?style=for-the-badge&logo=prometheus)
-![ELK Stack](https://img.shields.io/badge/ELK%20Stack-Log%20Analysis-005571?style=for-the-badge&logo=elasticstack)
-![iptables](https://img.shields.io/badge/iptables-Firewall-yellow?style=for-the-badge)
-![fail2ban](https://img.shields.io/badge/fail2ban-Intrusion%20Prevention-lightblue?style=for-the-badge)
+![AntiX Linux](https://img.shields.io/badge/AntiX-Linux-%232679D0?style=flat&logo=linux&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-ready-%230db7ed?style=flat&logo=docker&logoColor=white)
+![Cowrie](https://img.shields.io/badge/Cowrie-honeypot-%23FF6F61?style=flat)
+![DVWA](https://img.shields.io/badge/DVWA-%23F1C40F?style=flat)
+![Juice Shop](https://img.shields.io/badge/OWASP-Juice_Shop-%23E34F26?style=flat)
+![tcpdump](https://img.shields.io/badge/tcpdump-%23007ACC?style=flat)
+![Python](https://img.shields.io/badge/Python-%233776AB?style=flat&logo=python&logoColor=white)
+![Ansible](https://img.shields.io/badge/Ansible-%23EE0000?style=flat&logo=ansible&logoColor=white)
+![tmux](https://img.shields.io/badge/tmux-%23333333?style=flat)
+![SSH](https://img.shields.io/badge/SSH-%23007ACC?style=flat&logo=ssh&logoColor=white)
 
 ---
 
-## Fases del proyecto
-1. **Preparación del hardware**
-   - Limpieza y optimización de la netbook.
-   - Instalación de SO ligero.
-2. **Configuración de red**
-   - IP fija, segmentación de laboratorio, reglas de firewall.
-3. **Implementación de sniffing**
-   - Captura de tráfico con filtros y guardado en PCAP.
-4. **Honeypot**
-   - Configuración y logging de actividad.
-5. **Monitoring & Dashboard**
-   - Visualización de logs en tiempo real.
-6. **Automatización**
-   - Scripts para generar reportes y alertas.
-7. **Documentación y conclusiones**
-   - Lo que funcionó, problemas encontrados, mejoras futuras.
+## Repository Structure
+
+├─ 01_Summary.md
+├─ 02_Architecture.md
+├─ 03_Installation.md
+├─ 04_Automated_Deployment.md
+├─ 05_Use_Cases.md
+├─ 06_Tests.md
+├─ 07_Security_Considerations.md
+├─ scripts/
+├─ ansible/
+└─ diagrams/
 
 ---
 
