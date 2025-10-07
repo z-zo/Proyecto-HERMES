@@ -1,4 +1,4 @@
-# Proyecto HERMES: Red Team Netbook Lab                                                                              
+# Project HERMES: Red Team Netbook Lab                                                                              
                                                                                                                            
 
 **Hardware-based Environment for Research, Monitoring, and Ethical Security**
@@ -8,7 +8,7 @@ Turn your old Samsung netbook (**netbook Samsung NP-NC110**) into a portable Red
 
 ---
 
-## Goals
+## Goals:
 
 - Convert the netbook into a lightweight, portable test station (sniffer, lightweight honeypots, vulnerable targets, deploy scripts).
 
@@ -20,7 +20,8 @@ Turn your old Samsung netbook (**netbook Samsung NP-NC110**) into a portable Red
 
 ---
 
-## Herramientas y tecnologías
+## Technologies Involved:
+
 ![AntiX Linux](https://img.shields.io/badge/AntiX-Linux-%232679D0?style=flat&logo=linux&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-ready-%230db7ed?style=flat&logo=docker&logoColor=white)
 ![LXD](https://img.shields.io/badge/LXD-optional-%23777BB4?style=flat)
@@ -47,24 +48,27 @@ Turn your old Samsung netbook (**netbook Samsung NP-NC110**) into a portable Red
 
 ---
 
-## Repository Structure
+## Repository Structure:
 
-├─ 01_Summary.md
-├─ 02_Architecture.md
-├─ 03_Installation.md
-├─ 04_Automated_Deployment.md
-├─ 05_Use_Cases.md
-├─ 06_Tests.md
-├─ 07_Security_Considerations.md
-├─ scripts/
-├─ ansible/
-└─ diagrams/
+├─ 01_Summary.md  
+├─ 02_Architecture.md  
+├─ 03_Installation.md  
+├─ 04_Automated_Deployment.md  
+├─ 05_Use_Cases.md  
+├─ 06_Tests.md  
+├─ 07_Security_Considerations.md  
+├─ scripts/  
+├─ ansible/  
+├─ diagrams/  
+└─ demo.mp4  
 
 ---
 
-## Disclaimer
-Este laboratorio se utiliza únicamente en **entornos controlados** y con **permiso explícito**.  
-No debe emplearse en redes o sistemas ajenos.
+## Security & Ethics:
+
+- Define scope, allowed IPs/hosts, and keep explicit consent records for any live tests.
+
+- Never expose the lab directly to the public Internet without strict egress filtering and NAT.
 
 ---
 
