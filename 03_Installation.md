@@ -19,5 +19,4 @@ sudo systemctl enable --now docker
 sudo apt install -y tcpdump tshark python3 python3-pip tmux dnsmasq
 ```
 ## Clone repo
-git clone https://github.com/<your-user>/netbook-redteam-lab.git
-cd netbook-redteam-lab
+git clone https://github.com/z-zo/Proyecto-HERMES.git
