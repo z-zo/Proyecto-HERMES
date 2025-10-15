@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  juice:
+    image: bkimminich/juice-shop
+    container_name: juice
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+
+  cowrie:
+    image: cowrie/cowrie
+    container_name: cowrie
+    ports:
+      - "2222:2222"
+    restart: unless-stopped
