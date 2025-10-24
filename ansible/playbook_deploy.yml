@@ -1,0 +1,17 @@
+- name: Deploy lab
+  hosts: localhost
+  become: true
+  tasks:
+    - name: Install packages
+      apt:
+        name: [docker.io, docker-compose, git, tcpdump]
+        state: present
+        update_cache: yes
+
+    - name: Pull images
+      community.docker.docker_image:
+        name: "{{ item }}"
+        source: pull
+      loop:
+        - bkimminich/juice-shop
+        - cowrie/cowrie
