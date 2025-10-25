@@ -5,18 +5,8 @@
 - Internet access to pull images/packages
 - 10 GB free disk recommended
 
-## Quick install (Debian/AntiX derived)
-```bash
-# update & essentials
-sudo apt update && sudo apt upgrade -y
-sudo apt install -y git curl wget ca-certificates build-essential
+sudo apt update && sudo apt install -y docker.io git tcpdump tshark
+git clone https://github.com/z-zo/Red-Team_Netbook_Lab
+cd netbook-redteam-lab
+./scripts/manage.sh up
 
-# Docker (recommended)
-sudo apt install -y docker.io
-sudo systemctl enable --now docker
-
-# Other tools
-sudo apt install -y tcpdump tshark python3 python3-pip tmux dnsmasq
-```
-## Clone repo
-git clone https://github.com/z-zo/Proyecto-HERMES.git
