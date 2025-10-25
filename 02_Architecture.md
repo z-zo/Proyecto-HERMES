@@ -16,8 +16,8 @@ WebApp Honeypot
 **Components**
 - **Host:** AntiX Linux (control, monitoring)
 - **Containers:** Docker for isolation
-- **Targets:** Juice Shop, DVWA
-- **Honeypots:** Cowrie, Conpot
+- **Targets:** Juice Shop
+- **Honeypots:** Cowrie
 - **Sniffer:** tcpdump/tshark on host
 
 **Notes**
